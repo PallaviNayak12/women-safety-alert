@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Safety Alert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Women Safety Alert System</h1>
+    <p>Press the alert button to send your live location to emergency contacts.</p>
+
+    <button id="alertBtn">Send SOS Alert</button>
+
+    <div id="output"></div>
+
+    <hr>
+
+    <h2>🧾 Emergency Contacts</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <button type="submit">Save Contact</button>
+    </form>
+
+    <div id="contactList"></div>
+  </div>
+
+  <audio id="alertSound" src="./alarm-301729.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
